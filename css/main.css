@@ -1,0 +1,129 @@
+.loader {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+}
+
+.flex-container {
+    display: flex;
+    background-color: DodgerBlue;
+}
+
+.alert-success {
+    color: black;
+    background-color: #dfe6ea;
+    border-color: #458fcf;
+    font-family: fantasy;
+}
+
+.alert-danger {
+    color: black;
+    background-color: #dfe6ea;
+    border-color: #ebccd1;
+    font-family: fantasy;
+}
+
+.flex-container>div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+ul.a {
+    list-style-type: circle;
+    box-shadow: 2px 2px rgba(0, 0, 0, .02);
+    border-radius: 4px;
+    border: 1px solid #e1e8f0;
+    background: #fff;
+    padding: 26px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#connect-to-store {
+    font-family: fantasy;
+    color: black;
+}
+
+.btn-info {
+    background-color: #dfe6ea;
+    border-color: #46b8da;
+}
+
+#import {
+    box-shadow: 2px 2px rgba(0, 0, 0, .02);
+    border-radius: 4px;
+    border: 1px solid #e1e8f0;
+    background-color: #dfe6ea;
+    padding: 31px;
+    color: black;
+    font-family: fantasy;
+}
+
+.wrap {
+    padding: 17px;
+    margin: 20px;
+}
+
+.loader:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 6px;
+    box-sizing: border-box;
+    border: 26px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: loader 1.2s infinite;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+        transform: rotate(900deg);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+        transform: rotate(1800deg);
+    }
+}
+
+.loader2 {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+}
+
+.loader2:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 6px;
+    box-sizing: border-box;
+    border: 26px solid #dfe6ea;
+    border-color: #dfe6ea transparent #dfe6ea transparent;
+    animation: loader2 1.2s infinite;
+}
+
+@keyframes loader2 {
+    0% {
+        transform: rotate(0);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+        transform: rotate(900deg);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+        transform: rotate(1800deg);
+    }
+}
